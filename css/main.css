@@ -14,3 +14,24 @@
   width: 1px;
   word-wrap: normal !important;
 }
+
+/*
+ * Navigation Links
+ */
+
+/* "Direct descendant" - the UL must be DIRECTLY inside the NAV.*/
+nav > ul {
+  list-style-type: square;
+}
+
+/* Any anchor (a) anywhere inside of a nav. */
+nav a {
+  text-decoration: none; /* Gets rid of the underline! */
+  /* "color" adjusts the font-colour. */
+  color: rgb( 0, 200, 0 ); /* There are a few ways to handle color... name, RGB, and Hex are most common. HSL is also an option. */
+}
+
+/* The "hover" state of any anchor (a) inside of a nav. (Pseudo-selector.) */
+nav a:hover {
+  color: #0000dd; /* Hex colour. */
+}
