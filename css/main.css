@@ -14,6 +14,74 @@
 }
 
 /*
+ * Rubik font.
+ * @link https://www.fontsquirrel.com/fonts/rubik
+ */
+
+@font-face { /* Rubik: Regular */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-Regular.ttf' );
+  src: url( '../fonts/rubik/Rubik-Regular.ttf' )
+       format( 'truetype' );
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /* Rubik: Black */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-Black.ttf' );
+  src: url( '../fonts/rubik/Rubik-Black.ttf' )
+       format( 'truetype' );
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face { /* Rubik: Black Italic */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-BlackItalic.ttf' );
+  src: url( '../fonts/rubik/Rubik-BlackItalic.ttf' )
+       format( 'truetype' );
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face { /* Rubik: Bold */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-Bold.ttf' );
+  src: url( '../fonts/rubik/Rubik-Bold.ttf' )
+       format( 'truetype' );
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face { /* Rubik: Bold Italic */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-BoldItalic.ttf' );
+  src: url( '../fonts/rubik/Rubik-BoldItalic.ttf' )
+       format( 'truetype' );
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face { /* Rubik: Light */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-Light.ttf' );
+  src: url( '../fonts/rubik/Rubik-Light.ttf' )
+       format( 'truetype' );
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face { /* Rubik: Light Italic */
+  font-family: 'Rubik';
+  src: url( '../fonts/rubik/Rubik-LightItalic.ttf' );
+  src: url( '../fonts/rubik/Rubik-LightItalic.ttf' )
+       format( 'truetype' );
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/*
  * Text meant only for screen readers.
  * @link https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
  */
