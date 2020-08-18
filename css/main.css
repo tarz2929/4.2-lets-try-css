@@ -1,4 +1,19 @@
 /*
+ * This is NOT a selector! We are defining a font
+ * that the browser / client can download and use.
+ * @link https://www.dafont.com/cherry.font
+ */
+@font-face {
+  font-family: 'Cherry Monospace-Light';
+  src: url( '../fonts/cherry-monospace/Cherry\ Monospace-Light.ttf' );
+  src:
+    url( '../fonts/cherry-monospace/Cherry\ Monospace-Light.ttf' )
+    format( 'truetype' );
+  font-weight: normal; /* Thickness: how bold or light is it? */
+  font-style: normal; /* Is it italic? */
+}
+
+/*
  * Text meant only for screen readers.
  * @link https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/
  */
@@ -16,6 +31,14 @@
 }
 
 /*
+ * Headings
+ */
+
+h1 {
+  font-family: 'Cherry Monospace-Light', 'Courier New', Courier, monospace;
+}
+
+/*
  * Navigation Links
  */
 
@@ -29,6 +52,14 @@ nav a {
   text-decoration: none; /* Gets rid of the underline! */
   /* "color" adjusts the font-colour. */
   color: rgb( 0, 200, 0 ); /* There are a few ways to handle color... name, RGB, and Hex are most common. HSL is also an option. */
+
+  /* Font-family is used for defining which font should be used here. */
+  /*
+   * If the first font in the comma-separated list is not installed
+   * on the device, the second will be used. If that is not found, the
+   * third, and so on. This is called the "font stack."
+   */
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
 }
 
 /* The "hover" state of any anchor (a) inside of a nav. (Pseudo-selector.) */
