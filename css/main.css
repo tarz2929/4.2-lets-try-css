@@ -134,3 +134,20 @@ nav a {
 nav a:hover {
   color: #0000dd; /* Hex colour. */
 }
+
+/*
+ * Page content (Rubik font testing.)
+ */
+
+.black-font {
+  font-weight: bolder;
+}
+
+.light-font {
+  font-weight: lighter;
+}
+
+h2, p {
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
