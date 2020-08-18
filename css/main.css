@@ -99,6 +99,17 @@
 }
 
 /*
+ * Body width. 
+ */
+
+body {
+  max-width: 600px;
+  /* Margin left/right auto will centre display "block" (non-text) elements. */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*
  * Headings
  */
 
@@ -150,4 +161,15 @@ nav a:hover {
 h2, p {
   font-family: 'Rubik', Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+
+/* Target the 3rd <P> inside an element. */
+p:nth-of-type(3) {
+  font-family: 'Red Rose', cursive;
+}
+
+/* Align image in 3rd <P> */
+p:nth-of-type(3) img {
+  float: right;
+  margin-left: 32px;
 }
