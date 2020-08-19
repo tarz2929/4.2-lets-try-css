@@ -74,9 +74,7 @@ header nav {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  main section,
-  main article,
-  main form {
+  main section {
     width: 100%;
   }
   /* "Service 1" */
