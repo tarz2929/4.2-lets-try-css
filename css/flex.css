@@ -88,3 +88,29 @@ header nav {
     width: 50%;
   }
 }
+
+/*
+ * Laptop / Desktop
+ */
+@media screen and ( min-width: 1024px ) {
+  /* "Logo" */
+  header h1 { order: 1; }
+  /* "Search" */
+  header form {
+    order: 3;
+    width: 25%;
+  }
+  /* "Navigation" */
+  header nav {
+    order: 2;
+    width: 50%;
+  }
+  /* "Service 1" */
+  main section:nth-of-type(2),
+  /* "Service 2" */
+  main section:nth-of-type(3),
+  /* "Service 3" */
+  main section:nth-of-type(4) {
+    width: calc( 100% / 3 );
+  }
+}
