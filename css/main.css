@@ -104,6 +104,7 @@
 
 body {
   max-width: 600px;
+  padding: 0 1.5rem 1.5rem;
   /* Margin left/right auto will centre display "block" (non-text) elements. */
   margin-right: auto;
   margin-left: auto;
@@ -170,6 +171,32 @@ p:nth-of-type(3) {
 
 /* Align image in 3rd <P> */
 p:nth-of-type(3) img {
-  float: right;
-  margin-left: 32px;
+  display: block;
+  width: auto; /* "Natural" width of the image. */
+  max-width: 85%; /* Make sure the image is never wider than the screen / parent element. */
+  margin: 0 auto 1.5em; /* M */
+  /*
+   * Margin has a few different formats we can use to set values.
+   * margin: 0 auto 1.5em is the same as...
+   * margin-top: 0;
+   * margin-right: auto;
+   * margin-bottom: 1.5em;
+   * margin-left: auto; 
+   */
+}
+
+/*
+ * Media Query (often used for setting "break-points."
+ * Mobile-first mindset means using "min-width" rules only.
+ * For this example, the styles inside are only applied for
+ * screends that are MINIMUM (this size or GREATER THAN) 400px.
+ */ /* For larger phones, or tablet size... */
+@media screen and ( min-width: 400px ) {
+
+  /* Align image in 3rd <P> */
+  p:nth-of-type(3) img {
+    max-width: 50%;
+    float: right;
+    margin-left: 32px;
+  }
 }
