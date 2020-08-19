@@ -192,6 +192,7 @@ p:nth-of-type(3) img {
  * screends that are MINIMUM (this size or GREATER THAN) 400px.
  */ /* For larger phones, or tablet size... */
 @media screen and ( min-width: 400px ) {
+  html { background-color: #dddddd; }
 
   /* Align image in 3rd <P> */
   p:nth-of-type(3) img {
@@ -199,4 +200,19 @@ p:nth-of-type(3) img {
     float: right;
     margin-left: 32px;
   }
+}
+
+/* Tablet. */
+@media screen and ( min-width: 800px ) {
+  html { background-color: #aaaaaa; }
+}
+
+/* Large tablet / small laptop. */
+@media screen and ( min-width: 1024px ) {
+  html { background-color: #999; }
+}
+
+/* Laptop. */
+@media screen and ( min-width: 1200px ) {
+  html { background-color: #777; }
 }
