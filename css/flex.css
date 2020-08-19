@@ -21,6 +21,7 @@ main form {
 }
 main section:nth-of-type(2) { background-color: red; }
 main section:nth-of-type(3) { background-color: pink; }
+main section:nth-of-type(4) { background-color: chartreuse; }
 main article { background-color: royalblue; }
 main form { background-color: green; }
 
@@ -38,4 +39,36 @@ footer {
   font-size: 16px;
   padding: 0;
   margin: 0;
+}
+
+/*
+ * Okay, now we're starting the Flex practice for real!
+ * REMEMBER: Mobile first!
+ */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header h1 { /* Logo */
+  width: 25%;
+}
+
+header form { /* Search */
+  width: 75%;
+}
+
+header nav {
+  /* width: 100vw; */
+  width: 100%;
+}
+
+/*
+ * Now targeting tablets and larger...
+ */
+@media screen and ( min-width: 600px ) {
+
+  
 }
