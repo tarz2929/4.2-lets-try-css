@@ -1,1 +1,41 @@
-html { background-color: salmon; }
+/*
+ * DON'T DO THIS PART IN THE REAL WORLD
+ * WE ARE JUST SETTING HEIGHTS AND COLOURS
+ * FOR TESTING PURPOSES...
+ */
+
+header h1,
+header form,
+header nav {
+  height: 30vw;
+  background-color: blue;
+}
+header form { background-color: greenyellow; }
+header nav { background-color: brown; }
+
+main section,
+main article,
+main form {
+  height: 50vw;
+  background-color: peru;
+}
+main section:nth-of-type(2) { background-color: red; }
+main section:nth-of-type(3) { background-color: pink; }
+main article { background-color: royalblue; }
+main form { background-color: green; }
+
+footer {
+  height: 20vw;
+  background-color: purple;
+}
+
+/*
+ * Browser Default Style Reset
+ * ( Please look into professionally prepared ones online! )
+ */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
