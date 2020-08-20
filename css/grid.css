@@ -1,1 +1,21 @@
-html { background-color: salmon; }
+/* Basic Browser Default Reset */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Colours JUST FOR TESTING...
+ */
+h1 { background-color: lightseagreen; }
+#search-form { background-color: lightgreen; }
+nav { background-color: lightsalmon; }
+.hero { background-color: lightslategray; }
+.service-1 { background-color: darkgoldenrod; }
+.service-2 { background-color: darkmagenta; }
+.service-3 { background-color: darkturquoise; }
+article { background-color: blue; }
+#contact-form { background-color: yellow; }
+footer { background-color: plum; }
