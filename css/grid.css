@@ -49,6 +49,22 @@ body {
     200px /* Additional (article) */
     260px /* Contact Form */
     32px; /* Footer */
+  /*
+   * Using the "grid-area" names we define...
+   * We can write out where each one belongs!
+   * Remember to represent EACH column AND row for best results!
+   */
+  grid-template-areas:
+    "logo search"
+    "navigation navigation"
+    "hero hero"
+    "service1 service1"
+    "service2 service2"
+    "service3 service3"
+    "additional additional"
+    "contact contact"
+    "footer footer";
+    
 }
 
 /* Name each section of our grid, so we can easily place our elements on it! */
@@ -62,3 +78,26 @@ nav { grid-area: navigation; }
 article { grid-area: additional; }
 #contact-form { grid-area: contact; }
 footer { grid-area: footer; }
+
+/* Tablet */
+@media screen and ( min-width: 600px ) {
+  body { /* 3 columns; 7 rows. */
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows:
+      32px /* Logo / Search Form */
+      32px /* Navigation */
+      500px /* Hero */
+      200px /* Service 1 / Service 2 */
+      180px /* Service 3 */
+      400px /* Additional / Contact */
+      32px; /* Footer */
+    grid-template-areas:
+      "logo search search"
+      "navigation navigation navigation"
+      "hero hero hero"
+      "service1 service1 service2"
+      "service3 service3 service3"
+      "additional additional contact"
+      "footer footer footer";
+  }
+}
