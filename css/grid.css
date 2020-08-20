@@ -91,6 +91,7 @@ footer { grid-area: footer; }
       180px /* Service 3 */
       400px /* Additional / Contact */
       32px; /* Footer */
+    /* Set up where the elements should fill for tablet... */
     grid-template-areas:
       "logo search search"
       "navigation navigation navigation"
@@ -99,5 +100,31 @@ footer { grid-area: footer; }
       "service3 service3 service3"
       "additional additional contact"
       "footer footer footer";
+  }
+}
+
+/* Large tablet; laptop / desktop. */
+@media screen and ( min-width: 1024px ) {
+  body { /* 6 columns; 5 rows. */
+    grid-template-columns:
+      calc( 100% / 6 )
+      calc( 100% / 6 )
+      calc( 100% / 6 )
+      calc( 100% / 6 )
+      calc( 100% / 6 )
+      calc( 100% / 6 );
+    grid-template-rows:
+      32px /* Logo / Nav / Search */
+      800px /* Hero */
+      200px /* Service 1 / Service 2 / Service 3*/
+      500px /* Additional / Contact */
+      32px; /* Footer */
+    /* Set up where the elements should fill for tablet... */
+    grid-template-areas:
+      "logo       navigation navigation navigation navigation search"
+      "hero       hero       hero       hero       hero       hero"
+      "service1   service1   service2   service2   service3   service3"
+      "additional additional additional contact    contact    contact"
+      "footer     footer     footer     footer     footer     footer";
   }
 }
