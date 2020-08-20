@@ -19,3 +19,34 @@ nav { background-color: lightsalmon; }
 article { background-color: blue; }
 #contact-form { background-color: yellow; }
 footer { background-color: plum; }
+
+/*
+ * Let's initialize our grid!
+ */
+
+/*
+ * Much like flex, to have grid items / cells,
+ * you need to have a container with display: grid.
+ * The contents (direct descendents) will follow
+ * grid rules!
+ * ***We may be using body for this example...
+ * ***but you can put this on most anything!!!
+ */
+
+body {
+  display: grid;
+  /* Set widths for columns... */
+  /* Column 1: 25%; Column 2: 75% */
+  grid-template-columns: 25% 75%;
+  /* Set heights for rows... */
+  grid-template-rows:
+    32px /* Logo / Search Form */
+    64px /* Navigation */
+    300px /* Hero */
+    120px /* Service 1 */
+    120px /* Service 2 */
+    120px /* Service 3 */
+    200px /* Additional (article) */
+    260px /* Contact Form */
+    32px; /* Footer */
+}
