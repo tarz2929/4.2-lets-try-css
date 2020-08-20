@@ -119,7 +119,7 @@ footer { grid-area: footer; }
       200px /* Service 1 / Service 2 / Service 3*/
       500px /* Additional / Contact */
       32px; /* Footer */
-    /* Set up where the elements should fill for tablet... */
+    /* Set up where the elements should fill for laptop / desktop... */
     grid-template-areas:
       "logo       navigation navigation navigation navigation search"
       "hero       hero       hero       hero       hero       hero"
