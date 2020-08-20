@@ -50,3 +50,15 @@ body {
     260px /* Contact Form */
     32px; /* Footer */
 }
+
+/* Name each section of our grid, so we can easily place our elements on it! */
+h1 { grid-area: logo; }
+#search-form { grid-area: search; }
+nav { grid-area: navigation; }
+.hero { grid-area: hero; }
+.service-1 { grid-area: service1; }
+.service-2 { grid-area: service2; }
+.service-3 { grid-area: service3; }
+article { grid-area: additional; }
+#contact-form { grid-area: contact; }
+footer { grid-area: footer; }
